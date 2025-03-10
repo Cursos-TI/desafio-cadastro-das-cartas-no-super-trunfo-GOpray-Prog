@@ -8,6 +8,25 @@
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
+float area = 0.0, pib = 0.0, area1 = 0.0, pib1 = 0.0, pib_percapita = 0.0, densidade = 0.0, pib_percapita1 = 0.0, densidade1 = 0.0;
+int populacao = 0, populacao1 = 0;;
+
+
+
+
+float calculo_densidade(){
+
+    densidade = (float) (populacao / area);
+    densidade1 = (float) (populacao1 / area1);
+
+}
+
+float calculo_PIBperCapita(){
+
+pib_percapita = (float) (pib / populacao);
+pib_percapita1 = (float) (pib1 / populacao1);
+
+}
 
 int main()
  {
@@ -34,12 +53,10 @@ int main()
     
     
         // Inicializar variáveis
-        int turistico = 0, populacao = 0;
-        float area, pib;
+        int turistico = 0;
         char cidade[30], estado[30], sigla;
     
-        int turistico1 = 0, populacao1 = 0;
-        float area1, pib1;
+        int turistico1 = 0;
         char cidade1[30], estado1[30], sigla1;
     
     
@@ -115,6 +132,10 @@ int main()
     
         printf("Número de Pontos Turísticos: ");
         scanf("%d", &turistico1);
+    
+       
+        calculo_PIBperCapita();
+        calculo_densidade();
       
         // Separador
     printf("SUAS CARTAS FORAM SALVAS COM SUCESSO !------------------\n\n");
@@ -126,10 +147,11 @@ int main()
         printf("Código da carta: %c%02d\n", sigla, num_carta);
         printf("Nome da Cidade: %s\n", cidade);
         printf("População: %d\n", populacao);
-        printf("Área: %.3f Km²\n", area);
-        printf("PIB: %.3f\n", pib);
+        printf("Área: %.2f Km²\n", area);
+        printf("PIB: %.2f\n", pib);
         printf("Pontos Turísticos: %d\n", turistico);
-    
+        printf("Densidade Populaconal: %.2f  hab/km²\n", densidade);
+        printf("PIB Per Capita: R$ %.2f  Reais\n", pib_percapita);
     
      // Separador
     printf("____________________________________________________________\n\n");
@@ -141,10 +163,11 @@ int main()
         printf("Código da carta: %c%02d\n", sigla1, num_carta1);
         printf("Nome da Cidade: %s\n", cidade1);
         printf("População: %d\n", populacao1);
-        printf("Área: %.3f Km²\n", area1);
-        printf("PIB: %.3f\n", pib1);
+        printf("Área: %.2f Km²\n", area1);
+        printf("PIB: %.2f\n", pib1);
         printf("Pontos Turísticos: %d\n", turistico1);
-    
+        printf("Densidade Populaconal: %.2f  hab/km²\n", densidade1);
+        printf("PIB Per Capita: R$ %.2f  Reais\n", pib_percapita1);
     
     
 
