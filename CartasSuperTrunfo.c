@@ -9,7 +9,7 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
 float area = 0.0, pib = 0.0, area1 = 0.0, pib1 = 0.0, pib_percapita = 0.0, densidade = 0.0, pib_percapita1 = 0.0, densidade1 = 0.0;
-int populacao = 0, populacao1 = 0;;
+unsigned long int populacao = 0, populacao1 = 0;;
 
 
 
@@ -56,7 +56,7 @@ int main()
         int turistico = 0;
         char cidade[30], estado[30], sigla;
     
-        int turistico1 = 0;
+        int turistico1 = 0, resul_pop = 0;
         char cidade1[30], estado1[30], sigla1;
     
     
@@ -83,7 +83,7 @@ int main()
     
         // Entrada de dados numéricos
         printf("Número de Habitantes: ");
-        scanf("%d", &populacao);
+        scanf("%lu", &populacao);
     
         printf("Digite a área da Cidade em m²: ");
         scanf("%f", &area);
@@ -119,7 +119,7 @@ int main()
     
         // Entrada de dados numéricos
         printf("Número de Habitantes: ");
-        scanf("%d", &populacao1);
+        scanf("%lu", &populacao1);
         
     
         printf("Digite a área da Cidade em m²: ");
@@ -136,6 +136,9 @@ int main()
        
         calculo_PIBperCapita();
         calculo_densidade();
+
+        resul_pop = populacao > populacao1;
+
       
         // Separador
     printf("SUAS CARTAS FORAM SALVAS COM SUCESSO !------------------\n\n");
@@ -146,12 +149,14 @@ int main()
         printf("Estado: %s\n", estado);
         printf("Código da carta: %c%02d\n", sigla, num_carta);
         printf("Nome da Cidade: %s\n", cidade);
-        printf("População: %d\n", populacao);
+        printf("População: %lu\n", populacao);
         printf("Área: %.2f Km²\n", area);
         printf("PIB: %.2f\n", pib);
         printf("Pontos Turísticos: %d\n", turistico);
         printf("Densidade Populaconal: %.2f  hab/km²\n", densidade);
         printf("PIB Per Capita: R$ %.2f  Reais\n", pib_percapita);
+
+         
     
      // Separador
     printf("____________________________________________________________\n\n");
@@ -162,7 +167,7 @@ int main()
         printf("Estado: %s\n", estado1);
         printf("Código da carta: %c%02d\n", sigla1, num_carta1);
         printf("Nome da Cidade: %s\n", cidade1);
-        printf("População: %d\n", populacao1);
+        printf("População: %lu\n", populacao1);
         printf("Área: %.2f Km²\n", area1);
         printf("PIB: %.2f\n", pib1);
         printf("Pontos Turísticos: %d\n", turistico1);
