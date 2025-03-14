@@ -37,23 +37,65 @@ pib_percapita1 = (float) (pib1 / populacao1);
 
 }
 
+// Funçao comparativa que determina a carta vencedora feita com estrutura de decisao
 int comparativos(){
   
-    resul_pop = populacao < populacao1;
-    resul_area = area < area1;
-    resul_pib = pib < pib1;
-    resul_turistico = turistico < turistico1;
-    resul_densidade = densidade < densidade1;
-    resul_pibpercapita = pib_percapita < pib_percapita1;
-    result_superPoder = superPoder < superPoder1;
 
-    resul_pop = resul_pop + 1;
-    resul_area = resul_area + 1;
-    resul_pib = resul_pib + 1;
-    resul_turistico = resul_turistico + 1;
-    resul_densidade = resul_densidade+ 1;
-    resul_pibpercapita = resul_pibpercapita + 1;
-    result_superPoder = result_superPoder + 1;
+     if (populacao > populacao1)
+     {
+        resul_pop = 1;
+     }else
+     {
+        resul_pop = 2;
+     }
+     
+     if (area > area1)
+     {
+        resul_area = 1;
+     }else
+     {
+        resul_area = 2;
+     }
+
+     if (pib > pib1)
+     {
+        resul_pib = 1;
+     }else
+     {
+        resul_pib = 2;
+     }
+
+     if (turistico > turistico1)
+     {
+        resul_turistico = 1;
+     }else
+     {
+        resul_turistico = 2;
+     }
+
+     if (densidade > densidade1)
+     {
+        resul_densidade = 1;
+     }else
+     {
+        resul_densidade = 2;
+     }
+
+     if (pib_percapita > pib_percapita1)
+     {
+        resul_pibpercapita = 1;
+     }else
+     {
+        resul_pibpercapita = 2;
+     }
+
+     if (superPoder > superPoder1)
+     {
+        result_superPoder= 1;
+     }else
+     {
+        result_superPoder = 2;
+     }
 
 }
 
