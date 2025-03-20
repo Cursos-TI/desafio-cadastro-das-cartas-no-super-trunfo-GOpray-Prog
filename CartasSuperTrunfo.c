@@ -866,7 +866,7 @@ int main()
     
    
         // Entrada de dados do usuário
-        printf("As Algumas Informaçoes serao preenchidas automaticamento.\n\n");
+        printf("Algumas Informaçoes serao preenchidas automaticamento.\n\n");
         printf("Digite o Pais da 1º Carta: ");
         fgets(pais, 50, stdin);
         pais[strcspn(pais, "\n")] = 0; // Evita a quebra de linha da função fgets
@@ -876,7 +876,7 @@ int main()
     
     
         // Entrada de dados do usuário
-        printf("As Algumas Informaçoes serao preenchidas automaticamento.\n\n");
+        printf("Algumas Informaçoes serao preenchidas automaticamento.\n\n");
         printf("Digite o Pais da 2º Carta: ");
         fgets(pais1, 50, stdin);
         pais1[strcspn(pais1, "\n")] = 0; // Evita a quebra de linha da função fgets
