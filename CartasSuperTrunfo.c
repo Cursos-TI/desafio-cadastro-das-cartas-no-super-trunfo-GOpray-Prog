@@ -104,11 +104,7 @@ void vencedora(){
      {
       //Estrutura Com Operador Ternário
        escolha_carta == num_carta && danoTotal > danoTotal1 ? printf("FIM DE JOGO!\nVOCÊ VENCEU!\n"): printf("FIM DE JOGO!\nVOCÊ PERDEU!\n");
-     }else
-     {
-      //Estrutura Com Operador Ternário
-      escolha_carta == num_carta1 && danoTotal < danoTotal1 ? printf("FIM DE JOGO!\nVOCÊ VENCEU!\n"): printf("FIM DE JOGO!\nVOCÊ PERDEU!\n");
-     }    
+     }      
 }
 
 // Funçao escolha de atributo para o ataque 1
