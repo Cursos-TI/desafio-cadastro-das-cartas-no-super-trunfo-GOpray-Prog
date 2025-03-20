@@ -49,17 +49,15 @@ Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licens
 1. Clone este repositório para o seu computador:
    ```bash
    git clone https://github.com/seuusuario/jogo-super-trunfo.git
+
    
 Compile o código:
-
-```bash
-Copiar
-Editar
+ ```bash
 gcc -o supertrunfo supertrunfo.c
 
-Execute o jogo:
 
-```bash
+Execute o jogo:
+ ```bash
 Copiar
 Editar
 ./supertrunfo
