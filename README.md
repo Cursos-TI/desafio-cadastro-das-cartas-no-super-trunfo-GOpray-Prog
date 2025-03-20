@@ -47,19 +47,14 @@ Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licens
 ## Como rodar o código
 
 1. Clone este repositório para o seu computador:
-   ```bash
    git clone https://github.com/seuusuario/jogo-super-trunfo.git
 
    
-Compile o código:
- ```bash
+2. Compile o código:
 gcc -o supertrunfo supertrunfo.c
 
 
-Execute o jogo:
- ```bash
-Copiar
-Editar
+3. Execute o jogo:
 ./supertrunfo
 
 Divirta-se jogando o Super Trunfo de Países! 🌍🎮
