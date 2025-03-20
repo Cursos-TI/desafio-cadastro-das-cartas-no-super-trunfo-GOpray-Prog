@@ -1,4 +1,4 @@
-Super Trunfo - Jogo de Cartas
+#Super Trunfo - Jogo de Cartas
 Descrição
 O Super Trunfo é um jogo de cartas onde dois jogadores competem utilizando cartas que representam países. Cada carta contém atributos como população, área, PIB, pontos turísticos, densidade populacional, PIB per capita e um "super poder" calculado com base nesses atributos. O objetivo do jogo é escolher até dois atributos e comparar as cartas para determinar o vencedor.
 
