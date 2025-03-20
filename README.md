@@ -75,7 +75,7 @@ Editar
 - **Exemplo de Código** será exibido em uma área formatada.
 - O link para a licença será clicável e estará com o formato adequado.
 
-Esse formato vai garantir que o seu **README** fique bem estruturado e fácil de entender para qualquer pessoa que acessar o repositório no GitHub.
+
 
 Divirta-se jogando o Super Trunfo de Países! 🌍🎮
 
