@@ -64,16 +64,9 @@ Editar
 Contribuições
 Contribuições são bem-vindas! Se você tiver sugestões ou melhorias, fique à vontade para abrir uma issue ou enviar um pull request.
 
-markdown
-Copiar
-Editar
 
-### Como ele será exibido no GitHub:
 
-- **Títulos** e **subtítulos** serão destacados.
-- **Listas** de funcionalidades e passos de instalação serão bem organizadas.
-- **Exemplo de Código** será exibido em uma área formatada.
-- O link para a licença será clicável e estará com o formato adequado.
+
 
 
 
